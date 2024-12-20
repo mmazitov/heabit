@@ -5,12 +5,11 @@
 A responsive web application featuring a dynamic popup form with multi-step validation. Built using Pug (HTML), SCSS, and JavaScript with a modern build system.
 
 ## 🛠 Tech Stack
-- Pug (HTML templating)
-- SCSS (styling)
-- JavaScript (ES6+)
-- Gulp (build system)
-- Bootstrap 5.3.3
-- ESLint & Stylelint (code quality)
+- [Pug (HTML templating)](https://pugjs.org/api/getting-started.html)
+- [SCSS (styling)](https://sass-lang.com/)
+- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Gulp (build system)](https://gulpjs.com/)
+- [ESLint](https://eslint.org/) & [Stylelint (code quality)](https://stylelint.io/)
 
 ## ✨ Features
 - Responsive popup form with multi-step validation
