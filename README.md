@@ -1,45 +1,47 @@
-<h1 align="center">Miro</h1>
+<h1 align="center">Popup Form</h1>
 
 ## 🎯 About
 
-This project consists of a web application built with HTML(PUG), CSS (Sass), and JavaScript. The main goal is to provide a responsive user interface with dynamic features like a language switcher, year display, and collapsible menu.
+A responsive web application featuring a dynamic popup form with multi-step validation. Built using Pug (HTML), SCSS, and JavaScript with a modern build system.
+
+## 🛠 Tech Stack
+- Pug (HTML templating)
+- SCSS (styling)
+- JavaScript (ES6+)
+- Gulp (build system)
+- Bootstrap 5.3.3
+- ESLint & Stylelint (code quality)
 
 ## ✨ Features
+- Responsive popup form with multi-step validation
+- Custom form validationMobile-friendly design
+- Modern build system with Gulp
+- SCSS architecture with mixins and variables
+- Code quality tools (ESLint, Stylelint)
+- Image optimization
+- Live reload development server
 
-**Responsive Layout:**
-The design adapts to different screen sizes, ensuring a smooth experience on both desktop and mobile devices.
+## 📁 Project Structure
 
-**Language Switcher:**
-The language switcher allows the user to toggle between different languages. The default language is set to English, and it can be dynamically changed by clicking the language options in the dropdown. 3. Year Display
-The current year is displayed in the footer, automatically updating each year. This is done using JavaScript to dynamically set the year in the HTML element with the class .cur-year.
-
-**Year Display:**
-The current year is displayed in the footer, automatically updating each year. This is done using JavaScript to dynamically set the year in the HTML element with the class .cur-year.
-
-**Collapsible Navbar:**
-The navbar collapses on smaller screen sizes, with a hamburger icon appearing to toggle the visibility of the navigation links.
-
-**Custom Styles with SCSS:**
-The styles are written in SCSS for better maintainability and structure.
-
-## 🚀 Project structure
-
-- src/images/: Directory for image files.
-- src/js/functions.js: JavaScript functions.
-- src/pug/: Directory for Pug templates.
-  - components/: Reusable Pug components.
-  - layouts/: Layout templates.
-  - main/: Main Pug files.
-  - pages/: Page templates.
-  - partials/: Partial templates.
-- src/scss/: Directory for SCSS stylesheets.
-  - \_forms.scss: SCSS for forms.
-  - \_functions.scss: SCSS functions.
-  - \_mixins.scss: SCSS mixins.
-  - \_normalize&reset.scss: Normalize and reset styles.
-  - \_typography.scss: Typography styles.
-  - \_variables.scss: SCSS variables.
-  - all.scss: Main SCSS file that imports all other SCSS files.
+```
+├── src/ 
+│   ├── images/         # Image assets
+│   ├── js/            
+│   │   └── functions.js # Core JavaScript functionality
+│   ├── pug/           # Pug templates
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   └── partials/
+│   └── scss/          # SCSS styles
+│       ├── _forms.scss
+│       ├── _variables.scss
+│       ├── _mixins.scss
+│       └── all.scss
+├── gulpfile.js        # Build configuration
+├── package.json
+└── .eslintrc.json
+```
 
 ## 🏁 Starting
 
@@ -50,10 +52,10 @@ Node.js - v14.21.3 (for running build tools if needed).
 Sass (for compiling SCSS into CSS).
 
 # Clone this project
-$ git clone https://github.com/mmazitov/miro
+$ git clone https://github.com/mmazitov/popup-form
 
 # Access
-$ cd miro
+$ cd popup-form
 
 # Install the dependencies using Yarn or npm:
 $ $ yarn install or $ npm install
