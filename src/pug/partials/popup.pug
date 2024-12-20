@@ -1,0 +1,39 @@
+include ../mixins/button
+include ../mixins/input
+
+.popup.first-step
+	+button('', 'btn close')
+		i.fa-solid.fa-xmark
+	.holder-img
+		img(src="pic/popup-welcome.png", alt="alt")
+	.holder-text
+		span.popup-text Підпишись на новини Heabit
+		h2.popup-heading Отримай -10% на перше замовлення
+		form.form.subscribe(action="#")
+			.form-group
+				i.fa-regular.fa-envelope.icon
+				+input('text', 'Твій е-мейл', 'input mail')
+			.form-group
+				+button('Підписатися', 'btn form')
+			.form-group.form-text
+				span Підписуючись, ти погоджуєшся з Політикою конфіденційності.
+
+
+.popup.second-step
+	+button('', 'btn close')
+		i.fa-solid.fa-xmark
+	.holder-img
+		.clip-overlay
+			.hands
+				.hand.left
+				.hand.right
+			img(src="pic/popup-aproove.png", alt="alt").image
+		
+	.holder-text
+		span.popup-text Ще кілька кроків…
+		h2.popup-heading Підтвердь е-мейл, щоб отримати свої -10%
+		ul.approve-list
+			each item, index in ['Відкрий лист на вказаній пошті', 'Підтверди підписку й зачекай', 'Скопіюй промокод із наступного листа', 'Введи промокод у кошику']
+				li.approve-item
+					span.popup-text.number #{index + 1}
+					span.popup-text.approve-text #{item}

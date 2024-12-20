@@ -1,0 +1,114 @@
+@import "./variables";
+
+body {
+  background: $popup-bg;
+  color: $main-color;
+  font: $weight-medium $fs-md/$lh-md $main-font;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $weight-medium;
+  margin: 0 0 10px;
+}
+
+h1 {
+  font-size: $fs-lg;
+  font-weight: $weight-bold;
+  line-height: $lh-lg;
+  margin-bottom: 20px;
+}
+
+h2,
+.popup-heading {
+  font-size: $fs-lg;
+  font-weight: $weight-medium;
+  line-height: $lh-lg;
+  margin-bottom: 36px;
+	letter-spacing: -1px;
+	@media (max-width: 768px) {
+		font-size: calc(#{$fs-md} + 2px);
+		line-height: calc(#{$lh-md} + 2px);
+		margin-bottom: 24px;
+	}
+}
+
+h3 {
+  font-size: $fs-md;
+  font-weight: $weight-bold;
+  margin-bottom: 29px;
+}
+
+h4 {
+  font-size: $fs-md;
+}
+
+h5 {
+  font-size: $fs-sm;
+}
+
+h6 {
+  font-size: $fs-sm;
+}
+
+p {
+  color: rgba($main-color, 0.6);
+  font: $weight-medium $fs-md/$lh-md $secondary-font;
+  margin: 0 0 33px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+a {
+  color: $links-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul,
+ol {
+  list-style-position: outside;
+  margin: 0 0 rem(16) rem(32);
+  padding: 0;
+
+  li {
+    margin: 0 0 rem(8);
+  }
+}
+
+blockquote {
+  border-left: rem(4) solid $main-color;
+  color: lighten($main-color, 20);
+  font-style: italic;
+  margin: 0 0 rem(16);
+  padding-left: rem(16);
+}
+
+code,
+pre {
+  background-color: clighten($main-color, 40);
+  border-radius: rem(4);
+  font-family: "Courier New", Courier, monospace;
+  font-size: rem(14);
+  padding: rem(2) rem(4);
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
